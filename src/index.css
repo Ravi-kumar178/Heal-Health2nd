@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imagee2{
+    filter:grayscale(40%);
+    transition: all ease-in 200ms;
+}
+
+.imagee2:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px #ece9e9, -5px -5px 5px #ece9e9;
+    filter: grayscale(0);
+    
+}
+
+.imgee{
+    border-radius: 55%;
+}
+
+.register {
+    
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-align: center;
+    color: white;
+    background: rgb(95, 150, 238); /* default color */
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, rgb(126, 150, 223) 50%, rgb(218, 224, 231) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.register:hover {
+    background-position: left;
+    transform: scaleX(1.05);
+}
+
+
+
+
+
+.feature1{
+    background: #acadae;
+    background: linear-gradient(to bottom right, #1D7CCF 41%, #CFB8A1 96%);
+    letter-spacing: 1px;
+}
+
+
+/* Hide the default checkbox */
+.custom-checkbox {
+    display: none;
+  }
+  
+  /* Style the custom checkbox container (can be a label or any other element) */
+ .custom-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; /* Adjust the left padding to create space for the custom checkbox */
+    cursor: pointer;
+  }
+  
+  /* Style the custom checkbox indicator */
+  .custom-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px; /* Width of the custom checkbox */
+    height: 20px; /* Height of the custom checkbox */
+    border: 2px solid #333; /* Border color of the custom checkbox */
+    background-color: white; /* Background color of the custom checkbox */
+    border-radius: 4px; /* Optional: Add rounded corners to the checkbox */
+  }
+  
+  /* Style the custom checkbox when it's checked */
+  .custom-checkbox:checked + .custom-label:before {
+    background-color: #4caf50; /* Change the background color when the checkbox is checked */
+    border-color: #4caf50; /* Change the border color when the checkbox is checked */
+  }
+  
+  /* Style the checkmark inside the custom checkbox when it's checked */
+  .custom-checkbox:checked + .custom-label:after {
+    content: '\2713'; /* Unicode checkmark character */
+    font-size: 18px; /* Optional: Adjust the font size of the checkmark */
+    color: white; /* Color of the checkmark */
+    position: absolute;
+    left: 5px;
+    top: 1px;
+  }
+  
+
+  /*Let's Start*/
+
+  .navStyle{
+    background: linear-gradient(to bottom, #616161, #ffffff); /* Set the gradient from gray (#808080) to white (#ffffff)*/
+  }
+
+  .rightPara{
+    border-right: 2px solid #333 ;
+    padding-right: 10px;
+  }
+
+  .heroSectionButton{
+    background-color:#e84949;
+    padding:0.8rem 2.3rem;
+    font-size:18px;
+    color:white;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+}
+
+.heroSectionButton::before{
+    content:"";
+    background-color: white;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition: all .5s;
+    z-index:-1;
+}
+
+.heroSectionButton:hover::before{
+  transform:scaleX(1);
+  color:#e84949
+}
+
+.heroSectionButton:hover{
+  color:#e84949;
+  z-index: 10;
+}
+
+.heroSectionSecondButton{
+   background-color:#e84949;
+    padding:0.8rem 60px;
+    font-size:18px;
+    color:white;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+}
+
+.heroSectionSecondButton::before{
+  content:"";
+  background-color: white;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  transform:scaleX(0);
+  transform-origin:left;
+  transition: all .5s;
+  z-index:-1;
+}
+
+.heroSectionSecondButton:hover::before{
+transform:scaleX(1);
+color:#e84949
+}
+
+.heroSectionSecondButton:hover{
+color:#e84949;
+z-index: 10;
+}
+
+.imagee1{
+  transition: all ease-in 200ms;
+}
+
+.imagee1:hover{
+  box-shadow: 5px 5px 5px rgb(210, 210, 210), -5px -5px 5px rgb(210, 210, 210);
+  transform: scale(1.1);
+}
+
+
+.contactBox{
+  border: 2px solid rgb(212, 209, 209);
+}
+
+.formHeading{
+  border-left: 2px solid #ff5a3c;
+  padding-left: 10px;
+}
+
+@media (max-width:910px) {
+   .heroImage{
+      max-width: 100%;
+   }
+
+   .navStyle{
+     max-width:100%;
+   }
+}
+
+
