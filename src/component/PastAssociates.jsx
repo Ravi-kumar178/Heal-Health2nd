@@ -28,7 +28,7 @@ function PastAssociates() {
   return (
     <div>
         
-        <section id="partners" className="previous-industry-associates bg-slate-100 min-h-fit py-[50px] mt-[100px]">
+        <section id="partners" className="previous-industry-associates bg-slate-100 min-h-fit py-[50px] ">
                <div className="relative flex flex-col justify-center items-center space-y-10 ">
       
                 <div className="flex  flex-row justify-center items-center space-x-4 text-[#1c1e56] text-3xl font-semibold ">
@@ -77,13 +77,6 @@ function PastAssociates() {
                    
                   </div>
 
-                  <a href='https://www.healhealth.co.in/'>
-                     <button className="flex flex-row justify-center  space-x-2 text-white font-semibold rounded-md items-center mx-auto bg-[#f19c41] py-2 px-6 hover:bg-[#ead6a0] hover:text-[#433ddd] transition-all duration-200">
-                       <p className="z-10">Become a Partner</p>
-                       <FaWallet/>
-                     </button>
-                     </a>
-                 
                </div>
            </section>
 

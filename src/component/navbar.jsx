@@ -5,7 +5,7 @@ import img from "../assets/Final Logo of 8th National Health Writers & Influence
 
 function Navbar() {
   return (
-    <nav className='navStyle max-h-fit sm:w-full py-3 overflow-x-hidden '>
+    <nav className=' bg-[#eeecc4] sticky top-0 z-10 max-h-fit min-w-max sm:w-full py-3 overflow-x-hidden '>
 
     <div className='flex w-11/12 navContainer mx-auto max-w-[1080px] flex-row justify-between items-center'>
 
@@ -14,7 +14,7 @@ function Navbar() {
       <div className='flex navLinks flex-row flex-wrap space-x-4 items-center font-medium text-[18px]'>
         <Link to="/" className=' pl-4'>Home</Link>
         
-        <a href='https://healfoundation.in/about-us'>About</a>
+        <Link to="/about">About</Link>
 
         <a href='https://healfoundation.in/heal-national-health-writers-and-editors-network'>Previous Conventions</a> 
      
@@ -24,7 +24,7 @@ function Navbar() {
 
         <Link to="/attendee">Attendee</Link>
      
-        <Link to="/previousattendee">Partner</Link>
+        <Link to="/partner">Partner</Link>
 
         <Link to="/contact">Contactus</Link>
      

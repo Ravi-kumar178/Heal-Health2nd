@@ -41,8 +41,6 @@
 
 
 .feature1{
-    background: #acadae;
-    background: linear-gradient(to bottom right, #1D7CCF 41%, #CFB8A1 96%);
     letter-spacing: 1px;
 }
 
@@ -93,7 +91,15 @@
   /*Let's Start*/
 
   .navStyle{
-    background: linear-gradient(to bottom, #616161, #ffffff); /* Set the gradient from gray (#808080) to white (#ffffff)*/
+    background-color: rgb(186, 186, 242); /* Set the gradient from gray (#808080) to white (#ffffff)*/
+  }
+
+  .footStyle{
+    background: linear-gradient(to bottom, #ffffff, #616161);
+  }
+
+  .agendaParaStyle{
+    color:   #616161;
   }
 
   .rightPara{
@@ -188,14 +194,75 @@ z-index: 10;
   padding-left: 10px;
 }
 
+.footerSecondHeading{
+  border-right: 2px solid #312f2f;
+}
+
 @media (max-width:910px) {
    .heroImage{
-      max-width: 100%;
+    width: 100%;
    }
 
    .navStyle{
      max-width:100%;
    }
 }
+
+.termsAndConditionsFirst {
+
+  background: linear-gradient(to bottom, #ebe0e0, #FFFFFF);
+  box-shadow: 5px 5px 5px #616161,-5px -5px 5px #616161;
+}
+
+
+@media (max-width:598px) {
+    .highlightDiv{
+        width: 40px;
+        font-weight: 600;
+    }
+    .highlightHeading{
+       font-weight: 600;
+       font-size: 13px;
+    }
+
+    .previousSpeakerHighlightHeading{
+      font-weight: 800;
+      font-size: 80px;
+    }
+    .previousSpeakerHighlightParagraph{
+       font-size:20px;
+       position: absolute;
+       top:70px;
+       left:115px;
+    }
+
+}
+
+@media ((min-width:600px) and (max-width:910px)) {
+    .highlightDiv{
+       width: 20px;
+       font-weight: 700;
+     }
+
+     .highlightHeading{
+       font-weight: 700;
+       font-size: 16px;
+     }
+
+     .previousSpeakerHighlightHeading{
+         font-weight: 800;
+         font-size: 100px;
+     }
+
+     .previousSpeakerHighlightParagraph{
+        font-weight: 800;
+        font-size: 40px;
+        position: absolute;
+        top:80px;
+        left: 160px;
+     }
+}
+
+
 
 

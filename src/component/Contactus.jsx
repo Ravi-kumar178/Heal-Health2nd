@@ -1,6 +1,5 @@
 import React from 'react';
 import img from "../assets/AI Image for Logos[877].jpg"
-import img1 from "../assets/Shayona-Banner-Page-Banner-Contact-us.jpg";
 import img2 from "../assets/contactus-banner.jpg"
 import { FaHome } from "react-icons/fa";
 import { BiChevronRight } from "react-icons/bi";
@@ -10,12 +9,21 @@ import img3 from "../assets/10.png"
 import img4 from "../assets/11.png"
 import img5 from "../assets/12.png"
 
+import Footer from './Footer';
+import Navbar from './navbar';
+
+import { FcManager } from "react-icons/fc";
+import { MdMail } from "react-icons/md";
+import { FaPencilAlt } from "react-icons/fa";
+import { IoIosCall } from "react-icons/io";
+
 
 const Contactus = () => {
   return (
  
   <div className='bg-gray-100'>
 
+   
     <div className='relative'>
      <img src={img2} className=' min-w-full'></img>
      <div className='absolute top-20 left-8 text-white flex flex-col space-y-10 font-bold text-xl'>
@@ -93,7 +101,8 @@ const Contactus = () => {
               className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
               placeholder="Your First Name"
             />
-            <img src={img} className='h-6 w-6 absolute top-10 right-2'></img>
+
+             <FcManager className='h-6 w-6 absolute top-10 right-2'/>
           </div>
 
           <div className="mb-4 relative">
@@ -103,20 +112,22 @@ const Contactus = () => {
               className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
               placeholder="Your Last Name"
             />
-            <img src={img} className='h-6 w-6 absolute top-10 right-2'></img>
+             <FcManager className='h-6 w-6 absolute top-10 right-2'/>
           </div>
 
          
           </div>
 
           <div className='grid grid-cols-2 gap-5'>
-          <div className="mb-4">
+          <div className="mb-4 relative">
             <label className="block text-gray-600 font-medium mb-2">Email</label>
             <input
               type="email"
-              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
+              className="w-full  border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
               placeholder="Your Email"
             />
+            <MdMail   className='h-6 w-6 text-[#ed9954] absolute top-10 right-2'/>
+             
           </div>
 
           <div className="mb-4 relative">
@@ -126,19 +137,20 @@ const Contactus = () => {
               className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
               placeholder="Enter your number..."
             />
-            <img src={img} className='h-6 w-6 absolute top-10 right-2'></img>
+             <IoIosCall className='h-6 w-6 absolute top-10 right-2 text-[#ed9954] -rotate-90'/>
           </div>
 
          
           </div>
          
-          <div className="mb-4">
+          <div className="mb-4 relative">
             <label className="block text-gray-600 font-medium mb-2">Message</label>
             <textarea
               className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
               rows="4"
               placeholder="Your Message"
             ></textarea>
+            <FaPencilAlt  className='h-6 w-6 text-[#ed9954] absolute top-10 right-2'/>
           </div>
          
           <div className="mb-4 flex flex-row items-center space-x-4">
@@ -147,7 +159,7 @@ const Contactus = () => {
 
           </div>
 
-          <button
+          <button onClick="#"
             type="submit"
             className="ml-6 mt-[20px] heroSectionButton px-6 font-normal rounded-md  text-xl py-1  flex flex-row items-center space-x-2 "
           >
@@ -157,16 +169,16 @@ const Contactus = () => {
       </div>
     </div>
 
-    <div className='max-w-[1150px] w-12/13  mx-auto min-h-fit py-[60px] flex flex-wrap justify-center space-x-24  items-center '>
+    <div className='max-w-[1150px] w-12/13  mx-auto min-h-fit py-[30px] flex flex-wrap justify-center space-x-24  items-center '>
      
-       <p className='text-4xl font-bold'>For any query: </p>
+       <p className='text-3xl font-bold'>For any query: </p>
 
     
     <div className='relative'>
-         <input type='email' name='email' placeholder='Email*' className='h-16 w-[300px] '/>
+         <input type='email' name='email' placeholder='Email*' className='h-12 w-[300px] '/>
         <a href='mailto:bhardwajravi2025@gmail.com'>
-         <div className='bg-[#ff5a3c] flex justify-center items-center h-16 w-[50px] absolute top-0 right-0'>
-          <BsFillSendFill size={30} className='text-white'/>
+         <div className='bg-[#ff5a3c] flex justify-center items-center h-12 w-[50px] absolute top-0 right-0'>
+          <BsFillSendFill size={25} className='text-white'/>
          </div>
          </a> 
        </div>
@@ -175,6 +187,7 @@ const Contactus = () => {
        
     </div>
 
+      
   </div>
    
   );

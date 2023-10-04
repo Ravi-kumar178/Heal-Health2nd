@@ -28,18 +28,22 @@ import imgeee25 from "../assets/images3/Kaniza Garari.jpg"
 import imgeee26 from "../assets/images3/Debarati Sen.jpg"
 import imgeee27 from "../assets/images3/Sameen Khan.jpeg"
 
+import img2 from "../assets/contactus-banner.jpg"
+
 function Previousattendee() {
   
      
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
+
+       <img src={img2}></img>
        
        <section id="attendee" className="relative w-full h-[200px] pt-[-15px]">
              <h1 className=" text-center text-[#888f90] font-extrabold text-[80px] opacity-40">TENTATIVE ATTENDEES</h1>
           </section>
 
-           <section className="relative w-[1300px] mt-[-60px] ">
+        <section className="relative w-[1300px] mt-[-60px] ">
            <div className="flex flex-row -translate-x-4 mt-8 mx-auto space-x-4 ">
                 <div className="w-[23%] h-[450px]  imagee2 rounded-md mx-auto relative group">
                      <img src={imgeee1} className="w-[76%] mx-auto mt-2  group-hover:opacity-80 h-[230px] imgee" ></img>
@@ -327,6 +331,7 @@ function Previousattendee() {
 </div>
            </section>
 
+      
 
 
     </div>

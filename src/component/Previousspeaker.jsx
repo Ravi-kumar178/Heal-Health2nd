@@ -27,6 +27,7 @@ import imge24 from "../assets/images2/Suneeti Toteja.jpg"
 import imge25 from "../assets/images2/Meera Mishra[941].jpg"
 import imge26 from "../assets/images2/rebeca+lopez+garcia[942].jpg"
 
+import img from "../assets/contactus-banner.jpg"
 
 function Previousspeaker() {
 
@@ -34,12 +35,14 @@ function Previousspeaker() {
   
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
+
+      <img src={img}></img>
       
-      <section id="speakerNavSection" className="relative w-full h-[300px] pt-[20px]">
+      <section id="speakerNavSection" className="relative w-full h-[300px] pt-[0px]">
              
              <h1 className=" text-center text-[#888f90] font-extrabold text-[150px] opacity-40">SPEAKERS</h1>
-             <p className="absolute  top-[100px] left-[290px] text-[#13174d] font-bold text-[70px]">Previous Key Speakers</p>
+             <p className="absolute  top-[70px] left-[250px] text-[#13174d] font-bold text-[70px]">Previous Key Speakers</p>
 
            
               

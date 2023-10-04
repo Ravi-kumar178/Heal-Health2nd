@@ -1,25 +1,29 @@
 import React from 'react'
 
 import image6 from "../assets/360_F_256595804_Z7E7oM7QNb9ntPfYpzaCh0fgVm5Gj4k9.jpg";
+import Footer from './Footer';
+import Navbar from './navbar';
 
 function Agenda() {
   return (
     <div>
+
+      
        
-       <div id="Agenda" className="relative my-12">
-              <img src={image6} alt="" className="w-full h-[500px] opacity-80"></img>
-              <div className="flex flex-row space-x-2 items-center absolute top-[40%] left-[45%]">
-                <div className="w-[50px] mt-1 h-[3px] bg-blue-700 font-bold"></div>
-                <h1 className="text-blue-700 font-bold text-2xl">Agenda</h1>
-                <div className="w-[50px] mt-1 h-[3px] bg-blue-700 font-bold"></div>
+       <div id="Agenda" className="relative ">
+              <img src={image6} alt="" className="w-full h-[350px] "></img>
+              <div className="flex flex-row justify-center space-x-2 mt-8 items-center ">
+                <div className="w-[50px] mt-1 h-[3px] bg-[#07061d]   font-bold"></div>
+                <h1 className="text-[#07061d] font-bold   text-2xl">Agenda</h1>
+                <div className="w-[50px] mt-1 h-[3px] bg-[#07061d]  font-bold"></div>
               </div>
 
-              <div className="mt-10 absolute top-[50%] left-[10%] mx-auto">
-                 <div className="feature1 h-[100px] w-[1080px] mx-auto flex justify-center items-center text-white font-bold text-[32px]">Track 1</div>
+              <div className=" -z-10  mx-auto">
+                 <div className="feature1 footStyle h-[100px] w-[1080px] mx-auto flex justify-center items-center text-[#07061d] font-bold text-[32px]">Track 1</div>
                  
                  <div className="bg-white w-[1080px] mx-auto h-[120px] px-10 items-center flex flex-row border space-x-[150px]">
                     <p className="flex w-[200px] justify-center items-center font-bold text-2xl">08:30 - 09:30 Hrs</p>
-                    <div className="flex items-center  text-[#387cf2] font-bold text-2xl">Registration</div>
+                    <div className="flex items-center  text-[#387cf2]  font-bold text-2xl">Registration</div>
                     <a href='https://docs.google.com/forms/d/e/1FAIpQLSf2Tcg7GPweYLIE89eR98cd1MuPhQvRNS1RpccgUqYL7nUzew/viewform?usp=sf_link'>
                       <button className=" register py-2 ml-32 px-8 text-white rounded-md  text-xl hover:bg-white hover:text-[#387cf2] transition-all duration-200">
                         <p className='font-medium'>Register Now</p>
@@ -83,10 +87,12 @@ function Agenda() {
                  </div>
 
               </div>
-            
+              
+                
            </div>
-
-       
+      
+         
+        
     </div>
   )
 }

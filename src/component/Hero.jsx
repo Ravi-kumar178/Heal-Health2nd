@@ -27,18 +27,18 @@ function Hero() {
   
 
   return (
-    <div className="app overflow-x-hidden min-w-max " >
+    <div className="app overflow-x-hidden  " >
 
-   <div className='relative'>
+   <div className='relative '>
 
-   <img src={images[value]} alt="img" className='min-w-full heroImage h-[600px]'/>
+   <img src={images[value]} alt="img" className='w-full heroImage h-[400px]'/>
     <div className="relative">
       {
         value === 1 ? 
         (
-        <div className='absolute w-[600px]  heroFirst right-0 top-[-500px] '>
+        <div className='absolute w-[600px]  heroFirst right-0 top-[-380px] '>
             <h1 className='font-bold  text-3xl ml-5  '>Overview NHWIC 2023:</h1>
-            <h1 className='font-bold text-3xl sm:text-4xl ml-5 '>Unlocking the Future</h1>
+            <h1 className='font-bold text-3xl  ml-5 '>Unlocking the Future</h1>
             <p className='font-normal rightPara text-slate-500 ml-6 text-[16px] mt-[20px]'>
                 The 8th National Health Writers and Editors Convention 2023 is a premier gathering of more than 100 healthcare writers, influencers, and thought leaders. This two-day event aims to equip attendees with the latest insights and tools to navigate the ever-evolving landscape of healthcare writing. Explore cutting-edge topics, engage with industry experts, and honor the champions of rural healthcare.
             </p>
@@ -66,9 +66,9 @@ function Hero() {
         )
         : 
         (
-        <div className='absolute left-[0px] w-[600px] top-[-500px]'>
-            <h1 className='font-bold text-5xl ml-5  '>Overview NHWIC 2023:</h1>
-            <h1 className='font-bold text-5xl ml-5 '>Unlocking the Future</h1>
+        <div className='absolute left-[0px] w-[600px] top-[-380px]'>
+            <h1 className='font-bold text-3xl ml-5  '>Overview NHWIC 2023:</h1>
+            <h1 className='font-bold text-3xl ml-5 '>Unlocking the Future</h1>
             <p className='font-normal rightPara text-slate-800 ml-6 text-[16px] mt-[20px]'>
                 The 8th National Health Writers and Editors Convention 2023 is a premier gathering of more than 100 healthcare writers, influencers, and thought leaders. This two-day event aims to equip attendees with the latest insights and tools to navigate the ever-evolving landscape of healthcare writing. Explore cutting-edge topics, engage with industry experts, and honor the champions of rural healthcare.
             </p>

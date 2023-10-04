@@ -11,21 +11,26 @@ import imge8 from "../assets/images4/Dr. Mandeep Dahiya.jpg"
 import imge25 from "../assets/images4/RUjuta Diwaker.jpg"
 import imge26 from "../assets/images4/Dr. Deepankar.jpg"
 
+import Navbar from './navbar'
+import Footer from './Footer'
+
 function Attendee() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
 
-<section id="" className="relative w-full h-[300px] pt-[20px]">
+      
+
+          <section id="" className="relative w-full h-[300px] pt-[20px]">
              
-             <h1 className=" text-center text-[#888f90] font-extrabold  text-[150px] opacity-40">ATTENDEE</h1>
-             <p className="absolute  top-[80px] left-[155px] text-[40px] sm:top-[100px] md:text-[70px] sm:text-[50px] sm-[255px] md:left-[455px] text-[#13174d] font-bold ">Key Attendee</p>
+             <h1 className=" text-center text-[#888f90] font-extrabold  text-[150px] opacity-40">ATTENDEES</h1>
+             <p className="absolute  top-[80px] left-[170px] text-[40px]  md:text-[70px] sm:text-[50px]   text-[#13174d] font-bold ">New Age Media Attendees</p>
 
            
               
           </section>
 
       
-      <section id="speakers" className="my-10 w-[1300px]">
+          <section id="speakers" className="my-10 w-[1300px]">
                <div className="flex flex-row flex-wrap  mx-auto  ">
                   <div className="w-[23%] h-[450px]  imagee2 rounded-md mx-auto relative group">
                     <img src={imge1} className="w-[76%] mx-auto mt-2  group-hover:opacity-80 h-[230px] imgee" ></img>
@@ -137,6 +142,7 @@ function Attendee() {
                </div>
           </section>
 
+         
     </div>
   )
 }
